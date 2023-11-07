@@ -1,0 +1,51 @@
+html {
+    width: 100%;
+    &.fixed-body {
+        overflow-y: hidden;
+    }
+}
+
+
+
+body {
+    width: calc(100vw - (100vw - 100%));
+    overflow-x: hidden;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+.m-banners{
+    font-size: calc(1240px * (16 / 1240));
+    @media screen and (max-width: 1240px){
+        font-size: calc(100vw * (16 / 1240));
+    }
+}
+
+.m-container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.25em;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .m-banners{
+        font-size: calc(100vw * (16 / 768));
+    }
+
+    .m-container{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .m-banners{
+        font-size: calc(100vw * (16 / 320));
+    }
+}
+
+
